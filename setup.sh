@@ -814,6 +814,7 @@ sleep 3
 echo  ""
 cd
 iinfo
+rm kingstore.sh
 rm -rf *
 echo -e "${BIBlue}╭════════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR} INSTALL SCRIPT SELESAI..                 ${NC}${BIBlue} │${NC}"
