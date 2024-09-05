@@ -17,15 +17,15 @@ DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
 MYIP=$(wget -qO- ifconfig.me)
-Isadmin=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $5}')
-Exp2=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $3}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $5}')
+Exp2=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $3}')
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
-Name=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $2}')
 ipsaya=$(wget -qO- ifconfig.me)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip"
+data_ip="https://raw.githubusercontent.com/gazzent/ip/main/ip"
 checking_sc() {
 useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
 if [[ $date_list < $useexp ]]; then
@@ -43,7 +43,7 @@ echo -e "$COLOR1│             \033[0;32mContact Your Admin ${NC}              
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 fi
 }
-madmin=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $5}')
+madmin=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $5}')
 checking_sc
 cd
 if [ ! -e /etc/per/id ]; then
@@ -309,7 +309,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│ ${WH}               • SCRIPT BY VPN EXPRESS •              ${NC} $COLOR1│$NC"
+echo -e " $COLOR1│ ${WH}               • SCRIPT VPN KINGSTORES •              ${NC} $COLOR1│$NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1      ══════════════════════════════════════════════${NC}"
 echo -e " $COLOR1  $NC${WH}    ❤️ DATE & TIME  ${COLOR1}: ${WH}$DATE2 WIB${NC}"
@@ -466,7 +466,7 @@ case $opt in
 04 | 4) clear ; m-trojan ;;
 05 | 5) clear ; m-noobz ;;
 06 | 6) clear ; m-trgo ;;
-07 | 7) clear ; wget https://raw.githubusercontent.com/AngIMAN/juall/main/ex.sh && chmod +x ex.sh && ./ex.sh ;;
+07 | 7) clear ; wget https://raw.githubusercontent.com/gazzent/kvm/main/ex.sh && chmod +x ex.sh && ./ex.sh ;;
 08 | 8) clear ; running ;;
 09 | 9) clear ; restartservice ;;
 10 | 10) clear ; m-system ;;

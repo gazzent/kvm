@@ -4,7 +4,7 @@ apt update -y && apt upgrade -y
 apt install python3 python3-pip git -y
 apt-get install libjpeg-dev zlib1g-dev -y
 cd /etc/
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/dobot.zip
+wget https://raw.githubusercontent.com/gazzent/kvm/main/dobot.zip
 unzip dobot.zip
 cd dobot
 pip3 install -r /etc/dobot/requirements.txt
@@ -36,4 +36,5 @@ systemctl start dobot
 
 cd
 rm install.sh
+rm -rf dobot.zip
 echo -e "Sukses Create Panel BOT Digital Ocean /start di bot untuk mulai"

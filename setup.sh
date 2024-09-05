@@ -1,7 +1,7 @@
 #!/bin/bash
 function CEKIP () {
 MYIP=$(curl -sS ipv4.icanhazip.com)
-IPVPS=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $4}')
+IPVPS=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $4}')
 if [[ $MYIP == $IPVPS ]]; then
 domain
 Casper2
@@ -91,7 +91,7 @@ echo ""
 #hhari=$(date -d "1 days" +"%Y-%m-%d")
 #mkdir /root/casper
 #cd /root/casper
-#wget https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip >/dev/null 2>&1
+#wget https://raw.githubusercontent.com/gazzent/ip/main/ip >/dev/null 2>&1
 #echo "### $author $hhari $MYIP @trial" >> ipmini
 #sleep 1
 #rm -rf .git
@@ -140,7 +140,7 @@ echo ""
 #hhari=$(date -d "30 days" +"%Y-%m-%d")
 #mkdir /root/rmbl
 #cd /root/rmbl
-#wget https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip >/dev/null 2>&1
+#wget https://raw.githubusercontent.com/gazzent/ip/main/ip >/dev/null 2>&1
 
 #echo "### $author $hhari $MYIP @RMBL" >> ipmini
 
@@ -171,7 +171,7 @@ echo ""
 #hhari2=$(date -d "999 days" +"%Y-%m-%d")
 #mkdir /root/rmbl
 #cd /root/rmbl
-#wget https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip >/dev/null 2>&1
+#wget https://raw.githubusercontent.com/gazzent/ip/main/ip >/dev/null 2>&1
 
 #sed -i "/# VIP/a ### ${author2} ${hhari2} ${MYIP2} ON 999 VIP" /root/rmbl/ipmini
 
@@ -202,7 +202,7 @@ echo ""
 #hhari3=$(date -d "999 days" +"%Y-%m-%d")
 #mkdir /root/rmbl
 #cd /root/rmbl
-#wget https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip >/dev/null 2>&1
+#wget https://raw.githubusercontent.com/gazzent/ip/main/ip >/dev/null 2>&1
 
 #sed -i "/# RESELLER/a ### ${author3} ${hhari3} ${MYIP3} ON 999" /root/rmbl/ipmini
 
@@ -232,7 +232,7 @@ echo ""
 #hhari=$(date -d "$KEY2 days" +"%Y-%m-%d")
 #mkdir /root/rmbl
 #cd /root/rmbl
-#wget https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip >/dev/null 2>&1
+#wget https://raw.githubusercontent.com/gazzent/ip/main/ip >/dev/null 2>&1
 #if [ "$ADMIN" = "ON" ]; then
 #sed -i "/# RESELLER/a ### ${author} ${hhari} ${MYIP} ${ADMIN} ${TOTALIP}" /root/rmbl/ipmini
 #else
@@ -304,7 +304,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/rmbl.sh && chmod +x rmbl.sh && ./rmbl.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/install/rmbl.sh && chmod +x rmbl.sh && ./rmbl.sh
 clear
 }
 res2() {
@@ -337,7 +337,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m KINGSTORE             ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -540,7 +540,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m KINGSTORE             ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -555,7 +555,7 @@ echo ""
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m KINGSTORE             ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -629,7 +629,7 @@ EOF
 #apt install nodejs -y
 #apt install npm -y
 #npm install express
-#wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/ins-botwa.sh && chmod +x ins-botwa.sh && ./ins-botwa.sh
+#wget https://raw.githubusercontent.com/gazzent/kvm/main/install/ins-botwa.sh && chmod +x ins-botwa.sh && ./ins-botwa.sh
 #cd
 #clear
 #}
@@ -638,7 +638,7 @@ cd
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
 clear
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/tools.sh &> /dev/null
+wget https://raw.githubusercontent.com/gazzent/kvm/main/tools.sh &> /dev/null
 chmod +x tools.sh 
 bash tools.sh
 clear
@@ -652,56 +652,56 @@ function Casper3(){
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}  PROCESS INSTALLED SSH & OVVPN         ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 clear
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}       PROCESS INSTALLED XRAY           ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/install/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}      PROCESS INSTALLED WEBSOCKET SSH   ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}      PROCESS INSTALLED BACKUP MENU     ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/install/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 clear
 
 #echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 #echo -e "${BIBlue}│ ${BGCOLOR}          PROCESS INSTALLED OHP         ${NC}${BIBlue} │${NC}"
 #echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-#wget https://raw.githubusercontent.com/AngIMAN/juall/main/sshws/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+#wget https://raw.githubusercontent.com/gazzent/kvm/main/sshws/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 #clear
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}          DOWNLOAD EXTRA MENU           ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/menu/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/menu/update.sh && chmod +x update.sh && ./update.sh
 clear
 
 #echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 #echo -e "${BIBlue}│ ${BGCOLOR}           DOWNLOAD SLOW DNS            ${NC}${BIBlue} │${NC}"
 #echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-#wget https://raw.githubusercontent.com/AngIMAN/juall/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
+#wget https://raw.githubusercontent.com/gazzent/kvm/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
 #clear
 
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}          DOWNLOAD UDP COSTUM           ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/udp-custom.sh && chmod +x udp-custom.sh && bash udp-custom.sh
+wget https://raw.githubusercontent.com/gazzent/kvm/main/install/udp-custom.sh && chmod +x udp-custom.sh && bash udp-custom.sh
 clear
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED NOOBZVPNS         ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/noobz/noobzvpns.zip
+wget https://raw.githubusercontent.com/gazzent/kvm/main/noobz/noobzvpns.zip
 unzip noobzvpns.zip
 chmod +x noobzvpns/*
 cd noobzvpns
@@ -713,20 +713,20 @@ clear
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED LIMIT XRAY        ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-#wget https://raw.githubusercontent.com/AngIMAN/juall/main/bin/limit.sh && chmod +x limit.sh && ./limit.sh
+#wget https://raw.githubusercontent.com/gazzent/kvm/main/bin/limit.sh && chmod +x limit.sh && ./limit.sh
 clear
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED TROJAN-GO         ${NC}${BIBlue} │${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-#wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/ins-trgo.sh && chmod +x ins-trgo.sh && ./ins-trgo.sh
+#wget https://raw.githubusercontent.com/gazzent/kvm/main/install/ins-trgo.sh && chmod +x ins-trgo.sh && ./ins-trgo.sh
 clear
 }
 
 function iinfo(){
 domain=$(cat /etc/xray/domain)
 TIMES="10"
-CHATID="6198984094"
+CHATID="618984094"
 KEY="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /etc/xray/isp)
@@ -736,7 +736,7 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 MODEL2=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 MYIP=$(curl -sS ipv4.icanhazip.com)
-IZIN=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $3}' )
+IZIN=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $3}' )
 d1=$(date -d "$IZIN" +%s)
 d2=$(date -d "$today" +%s)
 EXP=$(( (d1 - d2) / 86400 ))
@@ -755,7 +755,7 @@ TEXT="
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <i> Notifikasi Installer Script...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/AimanVpnExpress wa.me/+628981874211"},{"text":"GRUP","url":"https://t.me/cloudvpnpremium"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/Candravpnz wa.me/+6281573872702"},{"text":"GRUP","url":"https://t.me/CandravpnzStores"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 }
@@ -783,7 +783,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/AngIMAN/juall/main/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/gazzent/kvm/main/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11

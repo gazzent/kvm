@@ -1,6 +1,6 @@
 #!/bin/bash
 # // PROJECT STORE
-url_izin="https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip"
+url_izin="https://raw.githubusercontent.com/gazzent/admin/main/ip"
 IP=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
@@ -26,7 +26,7 @@ checking_sc
 # Token AngIMAN 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
 TOKEN="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"
 today=`date -d "0 days" +"%Y-%m-%d"`
-git clone https://github.com/AngIMAN/izin_jual.git /root/ipvps/ &> /dev/null
+git clone https://github.com/gazzent/ip.git /root/ipvps/ &> /dev/null
 clear
 echo -e ""
 read -p "Input IP Address : " ip
@@ -44,14 +44,14 @@ read -p " Masukan waktu expired : " -e exp
 exp2=`date -d "${exp} days" +"%Y-%m-%d"`
 echo "### ${name} ${exp2} ${ip}" >> /root/ipvps/ip
 cd /root/ipvps
-git config --global user.email "imanfals51@gmail.com" &> /dev/null
-git config --global user.name "AngIMAN" &> /dev/null
+git config --global user.email "irawancandra2303@gmail.com" &> /dev/null
+git config --global user.name "gazzent" &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
 git add . &> /dev/null
 git commit -m register &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/AngIMAN/izin_jual
-git push -f https://${TOKEN}@github.com/AngIMAN/izin_jual.git &> /dev/null
+git remote add origin https://github.com/gazzent/ip
+git push -f https://${TOKEN}@github.com/gazzent/ip.git &> /dev/null
 rm -rf /root/ipvps
 clear

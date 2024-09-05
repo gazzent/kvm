@@ -1,7 +1,7 @@
 #!/bin/bash
 # Token AngIMAN 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
     TOKEN="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"
-    git clone https://github.com/AngIMAN/izin_jual /root/ipvps/ &> /dev/null
+    git clone https://github.com/gazzent/ip /root/ipvps/ &> /dev/null
     clear
     echo ""
     echo -e "${g}         LIST IP VPS          $NC"
@@ -24,8 +24,8 @@
     git add . &> /dev/null
     git commit -m register &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/AngIMAN/izin_jual
-    git push -f https://${TOKEN}@github.com/AngIMAN/permission.git &> /dev/null
+    git remote add origin https://github.com/gazzent/ip
+    git push -f https://${TOKEN}@github.com/gazzent/ip.git &> /dev/null
     rm -rf /root/ipvps
     clear
     sleep 1

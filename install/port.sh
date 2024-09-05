@@ -12,7 +12,7 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
