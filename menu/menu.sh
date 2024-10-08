@@ -313,7 +313,7 @@ echo -e " $COLOR1│ ${WH}               • 𝕬𝖚𝖙𝖔𝖘𝖈𝖗𝖎�
 echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
 #echo -e " $COLOR1  $NC${WH}     𝙳𝙰𝚃𝙴 & 𝚃𝙸𝙼𝙴 ${COLOR1}: ${WH}$DATE2 WIB${NC}"
 echo -e " $COLOR1  $NC${WH}     𝔒𝔰 𝔖𝔢𝔯𝔳𝔢𝔯    ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1  $NC${WH}     ℜ𝔞𝔪 𝔖𝔢𝔯𝔳𝔢𝔯  ${COLOR1}: ${WH}$tram-B / $uram-B ${NC}"
+echo -e " $COLOR1  $NC${WH}     ℜ𝔞𝔪 𝔖𝔢𝔯𝔳𝔢𝔯  ${COLOR1}: ${WH}$tram MB / $uram MB ${NC}"
 #echo -e " $COLOR1  $NC${WH}  UPTIME      ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
 #echo -e " $COLOR1  $NC${WH}  TIME        ${COLOR1}: ${WH}$TIMEZONE${NC}"
 echo -e " $COLOR1  $NC${WH}     ℑ𝔰𝔭         ${COLOR1}: ${WH}$ISP${NC}"
@@ -346,7 +346,8 @@ echo -e " $COLOR1│$NC ${COLOR1}[${WH}0${COLOR1}]${NC}${COLOR1}• ${WH}𝔢�
 echo -e " $COLOR1╰═════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ ${WH}• 𝔲𝔰𝔢𝔯𝔫𝔞𝔪𝔢 𝔰𝔠𝔯𝔦𝔭𝔱 : $author •$NC"
-echo -e " $COLOR1│ ${WH}• 𝔢𝔵𝔭𝔦𝔯𝔢𝔡 𝔰𝔠𝔯𝔦𝔭𝔱${COLOR1}: ${WH}$certificate 𝔥𝔞𝔯𝔦$NC"
+echo -e " $COLOR1│ ${WH}• 𝕸𝖔𝖉𝖊 𝔰𝔠𝔯𝔦𝔭𝔱${COLOR1}: 𝕸𝖔𝖉 𝕶𝖎𝖓𝖌𝖘𝖙𝖔𝖗𝖊 3$NC"
+echo -e " $COLOR1│ ${WH}• 𝔲𝔰𝔢𝔯𝔫𝔞𝔪𝔢 𝔰𝔠𝔯𝔦𝔭𝔱 : $author •$NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════╯${NC}"
 else
 ressee="menu"
