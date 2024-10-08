@@ -17,15 +17,15 @@ DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
 MYIP=$(wget -qO- ifconfig.me)
-Isadmin=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $5}')
-Exp2=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $3}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $5}')
+Exp2=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $3}')
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
-Name=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $2}')
 ipsaya=$(wget -qO- ifconfig.me)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/gazzent/ip/main/ip"
+data_ip="https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip"
 checking_sc() {
 useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
 if [[ $date_list < $useexp ]]; then
@@ -43,7 +43,7 @@ echo -e "$COLOR1│             \033[0;32mContact Your Admin ${NC}              
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 fi
 }
-madmin=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $5}')
+madmin=$(curl -sS https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip | grep $MYIP | awk '{print $5}')
 checking_sc
 cd
 if [ ! -e /etc/per/id ]; then
@@ -309,46 +309,49 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│ ${WH}               • 𝕬𝖚𝖙𝖔𝖘𝖈𝖗𝖎𝖕𝖙 𝕭𝖞 𝕶𝖎𝖓𝖌𝖘𝖙𝖔𝖗𝖊 •              ${NC} $COLOR1│$NC"
+echo -e " $COLOR1│ ${WH}               • SCRIPT BY VPN EXPRESS •              ${NC} $COLOR1│$NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
-#echo -e " $COLOR1  $NC${WH}     𝙳𝙰𝚃𝙴 & 𝚃𝙸𝙼𝙴 ${COLOR1}: ${WH}$DATE2 WIB${NC}"
-echo -e " $COLOR1  $NC${WH}     𝔒𝔰 𝔖𝔢𝔯𝔳𝔢𝔯    ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1  $NC${WH}     ℜ𝔞𝔪 𝔖𝔢𝔯𝔳𝔢𝔯  ${COLOR1}: ${WH}$tram MB / $uram MB ${NC}"
+echo -e " $COLOR1      ══════════════════════════════════════════════${NC}"
+echo -e " $COLOR1  $NC${WH}    ❤️ DATE & TIME  ${COLOR1}: ${WH}$DATE2 WIB${NC}"
+echo -e " $COLOR1  $NC${WH}    🧡 OS           ${COLOR1}: ${WH}$MODEL2${NC}"
+echo -e " $COLOR1  $NC${WH}    💛 RAM          ${COLOR1}: ${WH}$tram-B / $uram-B ${NC}"
 #echo -e " $COLOR1  $NC${WH}  UPTIME      ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
 #echo -e " $COLOR1  $NC${WH}  TIME        ${COLOR1}: ${WH}$TIMEZONE${NC}"
-echo -e " $COLOR1  $NC${WH}     ℑ𝔰𝔭         ${COLOR1}: ${WH}$ISP${NC}"
-echo -e " $COLOR1  $NC${WH}     ℭ𝔭𝔲 𝔘𝔰𝔞𝔤𝔢   ${COLOR1}: ${WH}$cpu_usage${NC}"
-#echo -e " $COLOR1  $NC${WH}     𝙲𝙸𝚃𝚈        ${COLOR1}: ${WH}$CITY${NC}"
-echo -e " $COLOR1  $NC${WH}     ℑ𝔭 𝔖𝔢𝔯𝔳𝔢𝔯    ${COLOR1}: ${WH}$MYIP${NC}"
-echo -e " $COLOR1  $NC${WH}     𝔇𝔬𝔪𝔞𝔦𝔫      ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
-#echo -e " $COLOR1  $NC${WH}     NS DOMAIN   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+echo -e " $COLOR1  $NC${WH}    💚 ISP          ${COLOR1}: ${WH}$ISP${NC}"
+echo -e " $COLOR1  $NC${WH}    🤍 CPU          ${COLOR1}: ${WH}$cpu_usage${NC}"
+echo -e " $COLOR1  $NC${WH}    💙 CITY         ${COLOR1}: ${WH}$CITY${NC}"
+echo -e " $COLOR1  $NC${WH}    💛 IP VPS       ${COLOR1}: ${WH}$MYIP${NC}"
+echo -e " $COLOR1  $NC${WH}    🧡 DOMAIN       ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+#echo -e " $COLOR1  $NC${WH}    🧡 NS DOMAIN   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+echo -e " $COLOR1  $NC${WH}    ❤️ MASA AKTIF   ${COLOR1}: ${WH}$certificate Hari / $Exp2 •$sts ${NC}$COLOR1" 
+echo -e " $COLOR1      ══════════════════════════════════════════════${NC}"
+echo -e " $COLOR1╭════════════════════════════════════════════════════════╮${NC}"
+echo -e " $COLOR1│ ${WH}               • USERNAME : $author • $NC"
+echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
 echo -e " ${COLOR1}  XRAY : ${status_xray}${COLOR1}   NGINX : ${status_nginx}${COLOR1}   DROPBEAR : ${status_beruangjatuh}${COLOR1}   UDP : ${status_udp}"
 echo -e ""
 echo -e " $COLOR1╭════════════════╮╭══════╮╭═════════════╮╭═══════════════╮${NC}"
 echo -e " $COLOR1│$NC   ${COLOR1}MENU AKUN${NC}    $COLOR1│$NC${COLOR1}${NC} ${COLOR1}STATUS ${NC} ${COLOR1}TOTAL PREMIUM ${NC} ${COLOR1}BANDWIDTH USED${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}1${COLOR1}]${NC}${COLOR1}• ${WH}𝔪𝔢𝔫𝔲 𝔰𝔰𝔥   $COLOR1│$NC   ${status_ws}${NC}     $total_ssh Accounts    ${NC}  ${COLOR1}TODAY ${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}2${COLOR1}]${NC}${COLOR1}• ${WH}𝔪𝔢𝔫𝔲 𝔳𝔪𝔢𝔰𝔰 $COLOR1│$NC   ${status_xray}${NC}     $vmess Accounts    ${NC}  $today_tx $today_txv${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}3${COLOR1}]${NC}${COLOR1}• ${WH}𝔪𝔢𝔫𝔲 𝔳𝔩𝔢𝔰𝔰  $COLOR1│$NC   ${status_xray}${NC}     $vless Accounts    ${NC}  ${COLOR1}YESTERDAY ${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}4${COLOR1}]${NC}${COLOR1}• ${WH}𝔪𝔢𝔫𝔲 𝔱𝔯𝔬𝔧𝔞𝔫 $COLOR1 $NC   ${status_xray}${NC}     $trtls Accounts    ${NC}  $yesterday_tx $yesterday_txv${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}5${COLOR1}]${NC}${COLOR1}• ${WH}𝔫𝔬𝔬𝔟𝔷𝔳𝔭𝔫𝔰  $COLOR1│$NC   ${stat_noobz}${NC}     $jumlah_noobz Accounts     ${NC} ${COLOR1}THIS MONTH ${NC}" 
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}6${COLOR1}]${NC}${COLOR1}• ${WH}𝔪𝔢𝔫𝔲 𝔱𝔯𝔤𝔬  $COLOR1│$NC   ${stat_trgo}${NC}     $jumlah_trgo Accounts     ${NC} $month_tx $month_txv${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}1${COLOR1}]${NC}${COLOR1}• ${WH}SSH       $COLOR1│$NC   ${status_ws}${NC}     $total_ssh Accounts    ${NC}  ${COLOR1}TODAY ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}2${COLOR1}]${NC}${COLOR1}• ${WH}VMESS     $COLOR1│$NC   ${status_xray}${NC}     $vmess Accounts    ${NC}  $today_tx $today_txv${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}3${COLOR1}]${NC}${COLOR1}• ${WH}VLESS     $COLOR1│$NC   ${status_xray}${NC}     $vless Accounts    ${NC}  ${COLOR1}YESTERDAY ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}4${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN    $COLOR1│$NC   ${status_xray}${NC}     $trtls Accounts    ${NC}  $yesterday_tx $yesterday_txv${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}5${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZVPN  $COLOR1│$NC   ${stat_noobz}${NC}     $jumlah_noobz Accounts     ${NC} ${COLOR1}THIS MONTH ${NC}" 
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}6${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO $COLOR1│$NC   ${stat_trgo}${NC}     $jumlah_trgo Accounts     ${NC} $month_tx $month_txv${NC}"
 echo -e " $COLOR1╰════════════════╯╰══════╯╰═════════════╯╰═══════════════╯${NC}"
-echo -e " $COLOR1╭═════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}7${COLOR1}]${NC}${COLOR1}• ${WH}𝔡𝔢𝔩𝔢𝔱𝔢 𝔞𝔩𝔩 𝔢𝔵𝔭𝔦𝔯𝔢𝔡  $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}8${COLOR1}]${NC}${COLOR1}• ${WH}𝔯𝔲𝔫𝔫𝔦𝔫𝔤 𝔰𝔢𝔯𝔳𝔦𝔠𝔢    $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}9${COLOR1}]${NC}${COLOR1}• ${WH}𝔯𝔢𝔰𝔱𝔞𝔯𝔱 𝔰𝔢𝔯𝔳𝔦𝔠𝔢     $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1} ${WH}𝔪𝔢𝔫𝔲 𝔰𝔶𝔰𝔱𝔢𝔪 $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1} ${WH}𝔱𝔢𝔩𝔢𝔤𝔯𝔞𝔪 𝔟𝔬𝔱 𝔭𝔞𝔫𝔢𝔩 $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1} ${WH}𝔱𝔢𝔩𝔢𝔤𝔯𝔞𝔪 𝔟𝔬𝔱 𝔫𝔬𝔱𝔦𝔣 $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1} ${WH}𝔪𝔢𝔫𝔲 𝔟𝔞𝔠𝔨𝔲𝔭 & 𝔯𝔢𝔰𝔱𝔬𝔯𝔢 $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1} ${WH}𝔲𝔭𝔡𝔞𝔱𝔢 𝔰𝔠𝔯𝔦𝔭𝔱 𝔱𝔲𝔫𝔫𝔢𝔩 $COLOR1 $NC"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}0${COLOR1}]${NC}${COLOR1}• ${WH}𝔢𝔵𝔦𝔱     $COLOR1 $NC"
-echo -e " $COLOR1╰═════════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1╭═════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│ ${WH}• 𝔲𝔰𝔢𝔯𝔫𝔞𝔪𝔢 𝔰𝔠𝔯𝔦𝔭𝔱 : $author •$NC"
-echo -e " $COLOR1│ ${WH}• 𝕸𝖔𝖉𝖊 𝔰𝔠𝔯𝔦𝔭𝔱${COLOR1}: 𝕸𝖔𝖉 𝕶𝖎𝖓𝖌𝖘𝖙𝖔𝖗𝖊 3$NC"
-echo -e " $COLOR1│ ${WH}• 𝔲𝔰𝔢𝔯𝔫𝔞𝔪𝔢 𝔰𝔠𝔯𝔦𝔭𝔱 : $author •$NC"
-echo -e " $COLOR1╰═════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╭═══════════════════════════╮╭═══════════════════════════╮${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}7${COLOR1}]${NC}${COLOR1}• ${WH}DELETE ALL EXPIRED   $COLOR1││$NC ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}TELEGRAM BOT PANEL  $COLOR1│$NC"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}8${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING SERVICE      $COLOR1││$NC ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}TELEGRAM BOT NOTIF  $COLOR1│$NC"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}9${COLOR1}]${NC}${COLOR1}• ${WH}RESTART SERVICE      $COLOR1││$NC ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}BACKUP & RESTORE    $COLOR1│$NC"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1} ${WH}MENU SYSTEM          $COLOR1││$NC ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT SERVER       $COLOR1│$NC"   
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}0${COLOR1}]${NC}${COLOR1}• ${WH}EXIT                 $COLOR1││$NC ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE SCRIPT       $COLOR1│$NC"
+echo -e " $COLOR1╰═══════════════════════════╯╰═══════════════════════════╯${NC}"
+if [ "$Isadmin" = "ON" ]; then 
+echo -e "$COLOR1╭════════════════════ • ${WH}PANEL ADMIN VIP${NC}${COLOR1} • ════════════════╮${NC}"
+echo -e "$COLOR1│  ${WH}[${COLOR1}13${WH}]${NC} ${COLOR1}• ${WH}RESELLER IP ${WH}[${COLOR1}MENU${WH}] $COLOR1 $NC"
+ressee="m-ip2"
+bottt="m-bot"
+echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 else
 ressee="menu"
 bottt="menu"
@@ -463,15 +466,15 @@ case $opt in
 04 | 4) clear ; m-trojan ;;
 05 | 5) clear ; m-noobz ;;
 06 | 6) clear ; m-trgo ;;
-07 | 7) clear ; wget https://raw.githubusercontent.com/gazzent/kvm/main/ex.sh && chmod +x ex.sh && ./ex.sh ;;
+07 | 7) clear ; wget https://raw.githubusercontent.com/AngIMAN/juall/main/ex.sh && chmod +x ex.sh && ./ex.sh ;;
 08 | 8) clear ; running ;;
 09 | 9) clear ; restartservice ;;
 10 | 10) clear ; m-system ;;
 11 | 11) clear ; m-bot ;;
 12 | 12) clear ; m-bot2 ;;
 13 | 13) clear ; m-backup ;;
-14 | 14) clear ; m-update ;;
-15 | 15) clear ; reboot ;;
+14 | 14) clear ; reboot ;;
+15 | 15) clear ; m-update ;;
 #88 | 88) clear ; new ;;
 77 | 77) clear ; newx ;;
 99 | 99) clear ; passwd ;;
