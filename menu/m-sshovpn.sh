@@ -142,9 +142,9 @@ _______________________________
 Payload WS/WSS   :
 GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]
 _______________________________
-OpenVPN SSL      : http://$domen:89/ssl.ovpn
-OpenVPN TCP      : http://$domen:89/tcp.ovpn
-OpenVPN UDP      : http://$domen:89/udp.ovpn
+OpenVPN SSL      : https://$domain:81/ssl.ovpn
+OpenVPN TCP      : https://$domain:81/tcp.ovpn
+OpenVPN UDP      : https://$domain:81/udp.ovpn
 _______________________________
 END
 if [[ -e /etc/cloudfront ]]; then
@@ -183,11 +183,11 @@ Pub Key          :  <code> $slkey</code>
 Payload WS/WSS   :
 <code>GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]</code>
 ◇━━━━━━━━━━━━━━━━━◇
-OpenVPN SSL      :  http://$domen:89/ssl.ovpn
-OpenVPN TCP      :  http://$domen:89/tcp.ovpn
-OpenVPN UDP      :  http://$domen:89/udp.ovpn
+OpenVPN SSL      :  https://$domain:81/ssl.ovpn
+OpenVPN TCP      :  https://$domain:81/tcp.ovpn
+OpenVPN UDP      :  https://$domain:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━◇
-Save Link Account: http://$domen:89/ssh-$Login.txt
+Save Link Account: https://$domain:81/ssh-$Login.txt
 ◇━━━━━━━━━━━━━━━━━◇
 $author
 ◇━━━━━━━━━━━━━━━━━◇
@@ -229,11 +229,11 @@ Pub Key          :  <code> $slkey</code>
 Payload WS/WSS   :
 <code>GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]</code>
 ◇━━━━━━━━━━━━━━━━━◇
-OpenVPN SSL      :  http://$domen:89/ssl.ovpn
-OpenVPN TCP      :  http://$domen:89/tcp.ovpn
-OpenVPN UDP      :  http://$domen:89/udp.ovpn
+OpenVPN SSL      :  https://$domain:81/ssl.ovpn
+OpenVPN TCP      :  https://$domain:81/tcp.ovpn
+OpenVPN UDP      :  https://$domain:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━◇
-Save Link Account: http://$domen:89/ssh-$Login.txt
+Save Link Account: https://$domain:81/ssh-$Login.txt
 ◇━━━━━━━━━━━━━━━━━◇
 $author
 ◇━━━━━━━━━━━━━━━━━◇
@@ -381,9 +381,9 @@ _______________________________
 Payload WS/WSS   :
 GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]
 _______________________________
-OpenVPN SSL      : http://$domen:89/ssl.ovpn
-OpenVPN TCP      : http://$domen:89/tcp.ovpn
-OpenVPN UDP      : http://$domen:89/udp.ovpn
+OpenVPN SSL      : https://$domain:81/ssl.ovpn
+OpenVPN TCP      : https://$domain:81/tcp.ovpn
+OpenVPN UDP      : https://$domain:81/udp.ovpn
 _______________________________
 END
 if [[ -e /etc/cloudfront ]]; then
@@ -422,11 +422,11 @@ Pub Key          :  <code> $slkey</code>
 Payload WS/WSS   :
 <code>GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]</code>
 ◇━━━━━━━━━━━━━━━━━◇
-OpenVPN SSL      :  http://$domen:89/ssl.ovpn
-OpenVPN TCP      :  http://$domen:89/tcp.ovpn
-OpenVPN UDP      :  http://$domen:89/udp.ovpn
+OpenVPN SSL      :  https://$domain:81/ssl.ovpn
+OpenVPN TCP      :  https://$domain:81/tcp.ovpn
+OpenVPN UDP      :  https://$domain:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━◇
-Save Link Account: http://$domen:89/ssh-$Login.txt
+Save Link Account: https://$domain:81/ssh-$Login.txt
 ◇━━━━━━━━━━━━━━━━━◇
 $author
 ◇━━━━━━━━━━━━━━━━━◇
@@ -467,11 +467,11 @@ Pub Key          :  <code> $slkey</code>
 Payload WS/WSS   :
 <code>GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]</code>
 ◇━━━━━━━━━━━━━━━━━◇
-OpenVPN SSL      :  http://$domen:89/ssl.ovpn
-OpenVPN TCP      :  http://$domen:89/tcp.ovpn
-OpenVPN UDP      :  http://$domen:89/udp.ovpn
+OpenVPN SSL      :  https://$domain:81/ssl.ovpn
+OpenVPN TCP      :  https://$domain:81/tcp.ovpn
+OpenVPN UDP      :  https://$domain:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━◇
-Save Link Account: http://$domen:89/ssh-$Login.txt
+Save Link Account: https://$domain:81/ssh-$Login.txt
 ◇━━━━━━━━━━━━━━━━━◇
 $author
 ◇━━━━━━━━━━━━━━━━━◇
@@ -511,9 +511,9 @@ echo -e "$COLOR1 $NC  ${WH}Ovpn Ws    ${COLOR1}: ${WH}2086" | tee -a /etc/xray/s
 echo -e "$COLOR1 $NC  ${WH}Port TCP   ${COLOR1}: ${WH}1194" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}Port UDP   ${COLOR1}: ${WH}2200,1-65535" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}Port SSL   ${COLOR1}: ${WH}990" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}http://$domen:89/tcp.ovpn" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}http://$domen:89/udp.ovpn" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$domen:89/ssl.ovpn" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}https://$domain:81/tcp.ovpn" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}https://$domain:81/udp.ovpn" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}https://$domain:81/ssl.ovpn" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
@@ -526,7 +526,7 @@ echo -e "$COLOR1 ${NC}  ${WH}Payload WS/WSS${COLOR1}: ${NC}" | tee -a /etc/xray/
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ${NC}  ${WH}Save Link Acount    : " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC}  ${WH}http://$domen:89/ssh-$Login.txt${NC}$COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ${NC}  ${WH}https://$domain:81/ssh-$Login.txt${NC}$COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log

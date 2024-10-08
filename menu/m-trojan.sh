@@ -171,7 +171,7 @@ Link GRPC    :
 <code>${trojan1}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
-http://$domain:89/trojan-$user.txt
+https://$domain:81/trojan-$user.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until    :  $exp
 ◇━━━━━━━━━━━━━━━━━◇
@@ -209,7 +209,7 @@ Link GRPC    :
 <code>${trojan1}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
-http://$domain:89/trojan-$user.txt
+https://$domain:81/trojan-$user.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until    :  $exp
 ◇━━━━━━━━━━━━━━━━━◇
@@ -273,7 +273,7 @@ echo -e "$COLOR1 ${NC} ${WH}Link gRPC    ${COLOR1}: " | tee -a /etc/trojan/akun/
 echo -e "$COLOR1 ${NC} ${WH}${trojanlink1}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Format Openclash ${COLOR1}: " | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/trojan-$user.txt${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}https://$domain:81/trojan-$user.txt${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Expired Until   ${COLOR1}: ${WH}$exp" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
@@ -386,7 +386,7 @@ Link gRPC    :
 <code>${trojan1}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
-http://$domain:89/trojan-$user.txt
+https://$domain:81/trojan-$user.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until    :  $timer Minutes
 ◇━━━━━━━━━━━━━━━━━◇
@@ -423,7 +423,7 @@ echo -e "$COLOR1 ${NC} ${WH}Link gRPC    ${COLOR1}: " | tee -a /etc/trojan/akun/
 echo -e "$COLOR1 ${NC} ${WH}${trojanlink1}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Format Openclash ${COLOR1}: " | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/trojan-$user.txt${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}https://$domain:81/trojan-$user.txt${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Expired Until   ${COLOR1}: ${WH}$timer Minutes" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log

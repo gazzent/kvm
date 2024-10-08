@@ -349,7 +349,7 @@ TEXT="
 <code>${vmesslink3}</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Format OpenClash : </code>
-http://$domain:89/vmess-$user.txt
+http://$domain:81/vmess-$user.txt
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Expired On : $exp</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
@@ -391,7 +391,7 @@ echo -e "$COLOR1 ${NC} ${COLOR1}Link Websocket GRPC     ${WH}: ${NC}" | tee -a /
 echo -e "$COLOR1${NC}${WH}${vmesslink3}${NC}"  | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Format Openclash ${COLOR1}:" | tee -a /etc/vmess/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/vmess-$user.txt${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}http://$domain:81/vmess-$user.txt${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC}   ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
@@ -670,7 +670,7 @@ TEXT="
 <code>${vmesslink3}</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Format OpenClash : </code>
-http://$domain:89/vmess-$user.txt
+http://$domain:81/vmess-$user.txt
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Expired On : $timer Minutes</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
@@ -712,7 +712,7 @@ echo -e "$COLOR1 ${NC} ${COLOR1}Link Websocket GRPC     ${WH}: ${NC}" | tee -a /
 echo -e "$COLOR1${NC}${WH}${vmesslink3}${NC}"  | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Format Openclash ${COLOR1}:" | tee -a /etc/vmess/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/vmess-$user.txt${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}http://$domain:81/vmess-$user.txt${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC}   ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/vmess/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vmess/akun/log-create-${user}.log

@@ -196,7 +196,7 @@ Link gRPC    :
 <code>${vless3}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
-http://$domain:89/vless-$user.txt
+https://$domain:81/vless-$user.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until    : $exp
 ◇━━━━━━━━━━━━━━━━━◇
@@ -234,7 +234,7 @@ Link GRPC    :
 <code>${vless3}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
-http://$domain:89/vless-$user.txt
+https://$domain:81/vless-$user.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until    : $exp
 ◇━━━━━━━━━━━━━━━━━◇
@@ -299,7 +299,7 @@ echo -e "$COLOR1 ${NC} ${COLOR1}Link gRPC               ${WH}:${NC}" | tee -a /e
 echo -e "$COLOR1${NC}${WH}${vlesslink3}${NC}"  | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Format Openclash ${COLOR1}: " | tee -a /etc/vless/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/vless-$user.txt${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}https://$domain:81/vless-$user.txt${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Expired Until   ${COLOR1}: ${WH}$exp" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
@@ -443,7 +443,7 @@ Link GRPC    :
 <code>${vless3}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
-http://$domain:89/vless-$user.txt
+https://$domain:81/vless-$user.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until    : $timer Minutes
 ◇━━━━━━━━━━━━━━━━━◇
@@ -486,7 +486,7 @@ echo -e "$COLOR1 ${NC} ${COLOR1}Link gRPC               ${WH}:${NC}" | tee -a /e
 echo -e "$COLOR1${NC}${WH}${vlesslink3}${NC}"  | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Format Openclash ${COLOR1}: " | tee -a /etc/vless/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/vless-$user.txt${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}https://$domain:81/vless-$user.txt${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Expired Until   ${COLOR1}: ${WH}$timer Minutes" | tee -a /etc/vless/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/vless/akun/log-create-${user}.log
