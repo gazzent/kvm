@@ -337,7 +337,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m KINGSTORE             ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m KINGSTORE                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -555,7 +555,7 @@ echo ""
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m KINGSTORE             ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m KINGSTORE                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
